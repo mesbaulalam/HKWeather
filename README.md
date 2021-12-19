@@ -16,4 +16,7 @@
 }
 ```
 
-Any valid username will work for the authentication 6. Copy the received Token and paste it in the Bearer Authentication header of your consequent requests. You do not need to type Bearer in front of the token. Just pasting the token will suffice. 7. Make a GET request to localhost:3000/weather. You will either see a response from the API, or data being pulled from the database incase the API is down.
+Any valid username will work for the authentication
+
+6. Copy the received Token and paste it in the Bearer Authentication header of your consequent requests. You do not need to type Bearer in front of the token. Just pasting the token will suffice.
+7. Make a GET request to localhost:3000/weather. You will either see a response from the API, or data being pulled from the database incase the API is down.
