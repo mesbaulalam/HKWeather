@@ -1,31 +1,20 @@
-![MongoDB](https://img.shields.io/badge/MongoDB-4.4.1-fcba03)
-![Express](https://img.shields.io/badge/Express-^4.17.1-green)
-![React](https://img.shields.io/badge/React-^17.0.1-blueviolet)
-![NodeJS](https://img.shields.io/badge/NodeJS-10.13.0-red)
+![Mongoose](https://img.shields.io/badge/MongoDB-6.1.2-fcba03)
+![Express](https://img.shields.io/badge/Express-^4.17.2-green)
+![NodeJS](https://img.shields.io/badge/NodeJS-17.0.0-red)
 
-## Using the database:
+## Running the application:
 
-I have included the data/db folder in the root directory, so
+1. Clone the repository
+2. npm install
+3. npm run devStart
+4. The server will run at port 3000. Go to postman to test the requests.
+5. First, we need to authenticate. Go to localhost:3000/login and send a POST request with the following body:
 
-mongod --dbpath="root:\data\db"
+```
+{
+    username: AppIt
+}
 
-should do the trick. After that, run mongod to start the MongoDB server.
-If you want to query and add new data, open a new terminal and run the following commands:
+```
 
-1. mongo
-2. use studentDB
-
-You can then view all the collections and respective documents
-
-## Running the backend:
-
-1. Go to root directory
-2. cd backend
-3. node server.js (Port 8000)
-
-## Running the frontend:
-
-1. Go to root directory
-2. cd frontend
-3. cd my-app
-4. npm install (Port 3000)
+Any valid username will work for the authentication 6. Copy the received Token and paste it in the Bearer Authentication header of your consequent requests. You do not need to type Bearer in front of the token. Just pasting the token will suffice. 7. Make a GET request to localhost:3000/weather. You will either see a response from the API, or data being pulled from the database incase the API is down.
